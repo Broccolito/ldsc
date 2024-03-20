@@ -1,0 +1,38 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2 sumstats/pte.sumstats.gz \
+--ref-ld-chr ld_annot/annot. \
+--print-snps w_hm3.snp \
+--out pte_output \
+--overlap-annot  \
+--frqfile-chr 1000G_Phase3_frq/1000G.EUR.QC. \
+--w-ld-chr weights_hm3_no_hla/weights. 
+
+Beginning analysis at Tue Mar 19 15:18:00 2024
+Reading summary statistics from sumstats/pte.sumstats.gz ...
+Read summary statistics for 1114696 SNPs.
+Reading reference panel LD Score from ld_annot/annot.[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1190321 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from weights_hm3_no_hla/weights.[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1242190 SNPs.
+After merging with reference panel LD, 1095745 SNPs remain.
+After merging with regression SNP LD, 1056786 SNPs remain.
+Removed 0 SNPs with chi^2 > 80 (1056786 SNPs remain)
+Total Observed scale h2: 0.0588 (0.0136)
+Categories: baseL2_0 Coding_UCSCL2_0 Coding_UCSC.extend.500L2_0 Conserved_LindbladTohL2_0 Conserved_LindbladToh.extend.500L2_0 CTCF_HoffmanL2_0 CTCF_Hoffman.extend.500L2_0 DGF_ENCODEL2_0 DGF_ENCODE.extend.500L2_0 DHS_peaks_TrynkaL2_0 DHS_TrynkaL2_0 DHS_Trynka.extend.500L2_0 Enhancer_AnderssonL2_0 Enhancer_Andersson.extend.500L2_0 Enhancer_HoffmanL2_0 Enhancer_Hoffman.extend.500L2_0 FetalDHS_TrynkaL2_0 FetalDHS_Trynka.extend.500L2_0 H3K27ac_HniszL2_0 H3K27ac_Hnisz.extend.500L2_0 H3K27ac_PGC2L2_0 H3K27ac_PGC2.extend.500L2_0 H3K4me1_peaks_TrynkaL2_0 H3K4me1_TrynkaL2_0 H3K4me1_Trynka.extend.500L2_0 H3K4me3_peaks_TrynkaL2_0 H3K4me3_TrynkaL2_0 H3K4me3_Trynka.extend.500L2_0 H3K9ac_peaks_TrynkaL2_0 H3K9ac_TrynkaL2_0 H3K9ac_Trynka.extend.500L2_0 Intron_UCSCL2_0 Intron_UCSC.extend.500L2_0 PromoterFlanking_HoffmanL2_0 PromoterFlanking_Hoffman.extend.500L2_0 Promoter_UCSCL2_0 Promoter_UCSC.extend.500L2_0 Repressed_HoffmanL2_0 Repressed_Hoffman.extend.500L2_0 SuperEnhancer_HniszL2_0 SuperEnhancer_Hnisz.extend.500L2_0 TFBS_ENCODEL2_0 TFBS_ENCODE.extend.500L2_0 Transcr_HoffmanL2_0 Transcr_Hoffman.extend.500L2_0 TSS_HoffmanL2_0 TSS_Hoffman.extend.500L2_0 UTR_3_UCSCL2_0 UTR_3_UCSC.extend.500L2_0 UTR_5_UCSCL2_0 UTR_5_UCSC.extend.500L2_0 WeakEnhancer_HoffmanL2_0 WeakEnhancer_Hoffman.extend.500L2_0 neanderthal_introgressionL2_0 av_VCT_peaks.narrowPeakL2_0 B_peaks.narrowPeakL2_0 CD14_peaks.narrowPeakL2_0 CD16_peaks.narrowPeakL2_0 CD81_CCT_peaks.narrowPeakL2_0 cDC_peaks.narrowPeakL2_0 dNK_peaks.narrowPeakL2_0 dS_FB_peaks.narrowPeakL2_0 DSC_A_1_peaks.narrowPeakL2_0 DSC_A_2_peaks.narrowPeakL2_0 DSC_B_1_peaks.narrowPeakL2_0 DSC_B_2_peaks.narrowPeakL2_0 eEVT_pre_peaks.narrowPeakL2_0 Endo_f_peaks.narrowPeakL2_0 Endo_l_peaks.narrowPeakL2_0 Endo_v_peaks.narrowPeakL2_0 Epi_peaks.narrowPeakL2_0 EVT_peaks.narrowPeakL2_0 EVTr_peaks.narrowPeakL2_0 FB_peaks.narrowPeakL2_0 HB_peaks.narrowPeakL2_0 iEVT_peaks.narrowPeakL2_0 MYCN_EVT_pro_peaks.narrowPeakL2_0 non-decidualized_DSC_peaks.narrowPeakL2_0 pEVT_peaks.narrowPeakL2_0 PV_peaks.narrowPeakL2_0 SCT_a_peaks.narrowPeakL2_0 SCT_b_peaks.narrowPeakL2_0 SCT_b_pre_peaks.narrowPeakL2_0 SCT_peaks.narrowPeakL2_0 SCT_pro_peaks.narrowPeakL2_0 T_peaks.narrowPeakL2_0 VCT_dividing_peaks.narrowPeakL2_0 VCT_peaks.narrowPeakL2_0
+Lambda GC: 1.0405
+Mean Chi^2: 1.0429
+Intercept: 0.9905 (0.0073)
+Ratio < 0 (usually indicates GC correction).
+Reading annot matrix from ld_annot/annot.[1-22] ... (annot)
+Results printed to pte_output.results
+Analysis finished at Tue Mar 19 15:19:53 2024
+Total time elapsed: 1.0m:53.81s
